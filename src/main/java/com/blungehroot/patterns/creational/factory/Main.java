@@ -2,14 +2,14 @@ package com.blungehroot.patterns.creational.factory;
 
 public class Main {
     public static void main(String[] args) {
-        GunFactory gunFactory = loadGunByType("machine gun");
+        GunFactory gunFactory = createGunFactoryByType("machine gun");
 
         Gun gun = gunFactory.createGun();
 
         gun.loadGun();
     }
 
-    static GunFactory loadGunByType(String gunType) {
+    static GunFactory createGunFactoryByType(String gunType) {
         if (gunType.equalsIgnoreCase("Handgun")) {
             return new HandGunFactory();
         } else if (gunType.equalsIgnoreCase("Machine gun")) {
