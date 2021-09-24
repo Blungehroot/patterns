@@ -1,4 +1,4 @@
-package com.blungehroot.patterns.structural;
+package com.blungehroot.patterns.structural.adapter;
 
 public class DataRunner {
     public static void main(String[] args) {

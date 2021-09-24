@@ -1,4 +1,4 @@
-package com.blungehroot.patterns.structural;
+package com.blungehroot.patterns.structural.adapter;
 
 public class AdapterJson extends JsonData implements Data {
     @Override
